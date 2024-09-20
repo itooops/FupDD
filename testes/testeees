@@ -1,0 +1,29 @@
+
+
+class Pet {
+    nome: string = ""; //atributos
+    especie: string = "";
+    idade: number = 0;
+    constructor(nome: string, especie: string, idade: number) { // parâmetros
+        this.nome = nome;
+        this.especie = especie;
+        this.idade = idade;
+    }
+}
+
+let nomes: string[] = ["fulano", "sicrano", "beltrano"];
+
+let tangerina = new Pet("tangerina", "preá", 16);
+let pets: Pet[] = [
+    tangerina, // indice 0
+    new Pet("rufus", "cao", 5), //indice 1
+    new Pet("joão", "potó", 18) //indice 2
+]
+pets[2].especie = "mariposa";
+
+pets.push(new Pet("chaninha", "gato", 3));
+pets.push(new Pet("alfredo", "carneiro", 8));
+
+for (let i = 0; i < pets.length; i++) {
+    console.log(pets[i].nome + ":" + pets[i].especie + ":" + pets[i].idade)
+}

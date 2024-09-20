@@ -1,0 +1,49 @@
+digraph diag {
+  node [penwidth=1, style="rounded,filled", shape=box]
+  "Início" -> "Base - Operações\n8 / 8"
+  "Início" -> "Base - Seleção I\n11 / 14"
+  "Início" -> "Base - Seleção II\n7 / 12"
+  "Início" -> "Base - Repetição I\n4 / 10"
+  "Início" -> "Base - Repetição II\n2 / 7"
+  "Início" -> "Base - Vetores I\n3 / 8"
+  "Início" -> "Base - Vetores II\n1 / 10"
+  "Início" -> "Base - Vetores III\n0 / 8"
+  "Início" -> "Base - Strings\n0 / 12"
+  "Base - Operações\n8 / 8" -> "Operações - extra\n4 / 5" 
+  "Base - Seleção I\n11 / 14" -> "Seleção - extra\n6 / 24" 
+  "Base - Repetição I\n4 / 10" -> "Repetição - extra\n0 / 9" [style=dotted]
+  "Base - Vetores I\n3 / 8" -> "Vetores - extra\n0 / 20" [style=dotted]
+  "Vetores - extra\n0 / 20" -> "Vetores: Lógica\n0 / 10" [style=dotted]
+  "Base - Strings\n0 / 12" -> "Strings I\n0 / 11" [style=dotted]
+  "Strings I\n0 / 11" -> "Strings II\n0 / 13" [style=dotted]
+  "Strings II\n0 / 13" -> "Strings III\n0 / 11" [style=dotted]
+  "Vetores: Lógica\n0 / 10" -> "Matrizes I\n0 / 7" [style=dotted]
+  "Matrizes I\n0 / 7" -> "Matrizes II\n0 / 8" [style=dotted]
+  "Base - Vetores I\n3 / 8" -> "Ponteiros\n0 / 6" [style=dotted]
+  "Base - Vetores I\n3 / 8" -> "Recursão\n0 / 4" [style=dotted]
+  "Ponteiros\n0 / 6" -> "Structs\n0 / 9" [style=dotted]
+  "Ponteiros\n0 / 6" -> "Em construção\n0 / 2" [style=dotted]
+  "Base - Operações\n8 / 8" [shape=ellipse color=green penwidth=3 fillcolor="aquamarine3;0.9:lime" ]
+  "Base - Seleção I\n11 / 14" [shape=ellipse color=yellow penwidth=3 fillcolor="aquamarine3;0.9:lime" ]
+  "Base - Seleção II\n7 / 12" [shape=ellipse color=yellow penwidth=3 fillcolor="aquamarine3;0.9:lime" ]
+  "Base - Repetição I\n4 / 10" [shape=ellipse color=red penwidth=3 fillcolor="aquamarine3;0.9:lime" ]
+  "Base - Repetição II\n2 / 7" [shape=ellipse color=red penwidth=3 fillcolor="aquamarine3;0.9:lime" ]
+  "Base - Vetores I\n3 / 8" [shape=ellipse color=red penwidth=3 fillcolor="aquamarine3;0.9:lime" ]
+  "Base - Vetores II\n1 / 10" [shape=ellipse color=red penwidth=3 fillcolor="aquamarine3;0.9:lime" ]
+  "Base - Vetores III\n0 / 8" [shape=ellipse color=red penwidth=3 fillcolor="aquamarine3;0.9:lime" ]
+  "Base - Strings\n0 / 12" [shape=ellipse color=magenta penwidth=3 fillcolor="aquamarine3;0.9:lime" ]
+  "Operações - extra\n4 / 5" [shape=ellipse color=yellow penwidth=3 fillcolor="bisque3;0.9:lime" ]
+  "Seleção - extra\n6 / 24" [shape=ellipse color=red penwidth=3 fillcolor="bisque3;0.9:lime" ]
+  "Repetição - extra\n0 / 9" [shape=ellipse color=white penwidth=1 fillcolor="bisque3;0.9:lime" ]
+  "Vetores - extra\n0 / 20" [shape=ellipse color=white penwidth=1 fillcolor="bisque3;0.9:lime" ]
+  "Vetores: Lógica\n0 / 10" [shape=ellipse color=white penwidth=1 fillcolor="bisque3;0.9:lime" ]
+  "Strings I\n0 / 11" [shape=ellipse color=white penwidth=1 fillcolor="bisque3;0.9:lime" ]
+  "Strings II\n0 / 13" [shape=ellipse color=white penwidth=1 fillcolor="bisque3;0.9:lime" ]
+  "Strings III\n0 / 11" [shape=ellipse color=white penwidth=1 fillcolor="bisque3;0.9:orange" ]
+  "Matrizes I\n0 / 7" [shape=ellipse color=white penwidth=1 fillcolor="bisque3;0.9:lime" ]
+  "Matrizes II\n0 / 8" [shape=ellipse color=white penwidth=1 fillcolor="bisque3;0.9:orange" ]
+  "Ponteiros\n0 / 6" [shape=ellipse color=white penwidth=1 fillcolor="bisque3;0.9:lime" ]
+  "Recursão\n0 / 4" [shape=ellipse color=white penwidth=1 fillcolor="bisque3;0.9:lime" ]
+  "Structs\n0 / 9" [shape=ellipse color=white penwidth=1 fillcolor="bisque3;0.9:lime" ]
+  "Em construção\n0 / 2" [shape=ellipse color=white penwidth=1 fillcolor="bisque3;0.9:lime" ]
+}
